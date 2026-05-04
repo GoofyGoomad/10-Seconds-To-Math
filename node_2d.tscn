@@ -1,3 +1,47 @@
 [gd_scene format=3 uid="uid://osgtddcg440s"]
 
+[ext_resource type="Texture2D" uid="uid://ckwva0k8fb8gx" path="res://Assets/Background.png" id="1_0e48y"]
+[ext_resource type="Texture2D" uid="uid://70v8hx3nlsp0" path="res://Assets/DefaultComputer.png" id="2_0e48y"]
+[ext_resource type="Texture2D" uid="uid://b7fqt8br2t18s" path="res://Assets/KeyboardDefault.png" id="3_epypp"]
+
+[sub_resource type="Animation" id="Animation_epypp"]
+resource_name = "one"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimationPlayer:current_animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(),
+"transitions": PackedFloat32Array(),
+"update": 1,
+"values": []
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_0hol4"]
+_data = {
+&"one": SubResource("Animation_epypp")
+}
+
 [node name="Node2D" type="Node2D" unique_id=1255809455]
+
+[node name="Background" type="Sprite2D" parent="." unique_id=733558086]
+scale = Vector2(27.687498, 15.757813)
+texture = ExtResource("1_0e48y")
+
+[node name="Camera2D" type="Camera2D" parent="Background" unique_id=1748087321]
+zoom = Vector2(0.745, 0.745)
+
+[node name="DefaultComputer" type="Sprite2D" parent="." unique_id=15197600]
+position = Vector2(21, -78)
+scale = Vector2(1.1433022, 1.1433022)
+texture = ExtResource("2_0e48y")
+
+[node name="KeyboardDefault" type="Sprite2D" parent="." unique_id=997907568]
+position = Vector2(41, 351)
+texture = ExtResource("3_epypp")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="KeyboardDefault" unique_id=1112812062]
+libraries/ = SubResource("AnimationLibrary_0hol4")
