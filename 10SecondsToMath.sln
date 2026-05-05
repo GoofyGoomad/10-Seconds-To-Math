@@ -1,0 +1,19 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10SecondsToMath", "10SecondsToMath.csproj", "{6C03DA44-BEAE-4448-9168-F0D6D5D41B8D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+	Debug|Any CPU = Debug|Any CPU
+	ExportDebug|Any CPU = ExportDebug|Any CPU
+	ExportRelease|Any CPU = ExportRelease|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6C03DA44-BEAE-4448-9168-F0D6D5D41B8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C03DA44-BEAE-4448-9168-F0D6D5D41B8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C03DA44-BEAE-4448-9168-F0D6D5D41B8D}.ExportDebug|Any CPU.ActiveCfg = ExportDebug|Any CPU
+		{6C03DA44-BEAE-4448-9168-F0D6D5D41B8D}.ExportDebug|Any CPU.Build.0 = ExportDebug|Any CPU
+		{6C03DA44-BEAE-4448-9168-F0D6D5D41B8D}.ExportRelease|Any CPU.ActiveCfg = ExportRelease|Any CPU
+		{6C03DA44-BEAE-4448-9168-F0D6D5D41B8D}.ExportRelease|Any CPU.Build.0 = ExportRelease|Any CPU
+	EndGlobalSection
+EndGlobal
