@@ -2,9 +2,113 @@
 
 [ext_resource type="Texture2D" uid="uid://ckwva0k8fb8gx" path="res://Assets/Background.png" id="1_0e48y"]
 [ext_resource type="Texture2D" uid="uid://70v8hx3nlsp0" path="res://Assets/DefaultComputer.png" id="2_0e48y"]
-[ext_resource type="Texture2D" uid="uid://b7fqt8br2t18s" path="res://Assets/KeyboardDefault.png" id="3_epypp"]
+[ext_resource type="Texture2D" uid="uid://b7fqt8br2t18s" path="res://Assets/keyboard/default_key.png" id="3_d2bti"]
+[ext_resource type="Texture2D" path="res://Assets/default_key.png" id="3_epypp"]
 [ext_resource type="Script" uid="uid://b11qi6bxvgarl" path="res://Keyboard.cs" id="3_q6r6c"]
-[ext_resource type="Texture2D" uid="uid://bebeuu5gomny" path="res://Assets/eight.png" id="5_kdubu"]
+[ext_resource type="Texture2D" path="res://Assets/eight_key.png" id="5_kdubu"]
+[ext_resource type="Texture2D" path="res://Assets/one_key.png" id="6_nr8wp"]
+[ext_resource type="Texture2D" path="res://Assets/five_key.png" id="7_d2bti"]
+[ext_resource type="Texture2D" path="res://Assets/four_key.png" id="8_ta5nu"]
+[ext_resource type="Texture2D" path="res://Assets/nine_key.png" id="9_flf07"]
+[ext_resource type="Texture2D" path="res://Assets/seven_key.png" id="10_k73cj"]
+[ext_resource type="Texture2D" path="res://Assets/six_key.png" id="11_rjqkl"]
+[ext_resource type="Texture2D" path="res://Assets/three_key.png" id="12_fs4d3"]
+[ext_resource type="Texture2D" path="res://Assets/two_key.png" id="13_7vxoj"]
+[ext_resource type="Texture2D" path="res://Assets/zero_key.png" id="14_ei405"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_nr8wp"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_d2bti")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_kdubu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_epypp")
+}],
+"loop": true,
+"name": &"eight",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_d2bti")
+}],
+"loop": true,
+"name": &"five",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_ta5nu")
+}],
+"loop": true,
+"name": &"four",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_flf07")
+}],
+"loop": true,
+"name": &"nine",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_nr8wp")
+}],
+"loop": true,
+"name": &"one",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_k73cj")
+}],
+"loop": true,
+"name": &"seven",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_rjqkl")
+}],
+"loop": true,
+"name": &"six",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_fs4d3")
+}],
+"loop": true,
+"name": &"three",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_7vxoj")
+}],
+"loop": true,
+"name": &"two",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14_ei405")
+}],
+"loop": true,
+"name": &"zero",
+"speed": 5.0
+}]
 
 [node name="Node2D" type="Node2D" unique_id=1255809455]
 
@@ -12,21 +116,17 @@
 scale = Vector2(27.687498, 15.757813)
 texture = ExtResource("1_0e48y")
 
-[node name="Camera2D" type="Camera2D" parent="Background" unique_id=1748087321]
-zoom = Vector2(0.745, 0.745)
-
-[node name="DefaultComputer" type="Sprite2D" parent="." unique_id=15197600]
+[node name="Computer" type="Sprite2D" parent="." unique_id=15197600]
 position = Vector2(21, -78)
 scale = Vector2(1.1433022, 1.1433022)
 texture = ExtResource("2_0e48y")
 
-[node name="Node" type="Node" parent="." unique_id=1353859249]
+[node name="Keyboard" type="AnimatedSprite2D" parent="." unique_id=266360760]
+position = Vector2(0, 349)
+sprite_frames = SubResource("SpriteFrames_nr8wp")
+frame_progress = 0.6563801
 script = ExtResource("3_q6r6c")
 
-[node name="KeyboardDefault" type="Sprite2D" parent="Node" unique_id=997907568]
-position = Vector2(41, 351)
-texture = ExtResource("3_epypp")
-
-[node name="Eight" type="Sprite2D" parent="Node" unique_id=1902366338]
-position = Vector2(41, 351)
-texture = ExtResource("5_kdubu")
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1748087321]
+scale = Vector2(27.687498, 15.757813)
+zoom = Vector2(0.745, 0.745)

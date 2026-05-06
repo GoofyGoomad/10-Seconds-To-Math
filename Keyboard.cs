@@ -3,10 +3,13 @@ using System;
 
 public partial class Keyboard : Node
 {
-	// Called when the node enters the scene tree for the first time.
+	private AnimatedSprite2D keyboardAnim;
+	
 	public override void _Ready()
 	{
-		var keyBoardKeys = get_tree()
+		keyboardAnim = GetNode<AnimatedSprite2D>("AnimatedSprite2D");
+
+		keyboardAnim.Play(default);
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.

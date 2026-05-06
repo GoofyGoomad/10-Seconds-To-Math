@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b7fqt8br2t18s"
-path="res://.godot/imported/KeyboardDefault.png-a719baccba6540b6b5e8888b6bcf7bbb.ctex"
+uid="uid://nwx6vxc25gip"
+path="res://.godot/imported/five_key.png-80e9e2e00d0ba1453bc3cfe6d7d7a5c3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/KeyboardDefault.png"
-dest_files=["res://.godot/imported/KeyboardDefault.png-a719baccba6540b6b5e8888b6bcf7bbb.ctex"]
+source_file="res://Assets/keyboard/five_key.png"
+dest_files=["res://.godot/imported/five_key.png-80e9e2e00d0ba1453bc3cfe6d7d7a5c3.ctex"]
 
 [params]
 
