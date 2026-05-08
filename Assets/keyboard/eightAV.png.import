@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://drdewgu2keya4"
-path="res://.godot/imported/zero_key.png-b8903b4dec966799a4a5a761c20a99f2.ctex"
+uid="uid://cr6oqfcan1yr3"
+path="res://.godot/imported/eightAV.png-60840c5c35817f1421a9917c9dab09bb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/keyboard/zero_key.png"
-dest_files=["res://.godot/imported/zero_key.png-b8903b4dec966799a4a5a761c20a99f2.ctex"]
+source_file="res://Assets/keyboard/eightAV.png"
+dest_files=["res://.godot/imported/eightAV.png-60840c5c35817f1421a9917c9dab09bb.ctex"]
 
 [params]
 

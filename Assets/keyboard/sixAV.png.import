@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://brku1kacqlwp3"
-path="res://.godot/imported/two_key.png-a67df4c9096a5fa3f343573e0fc3aeec.ctex"
+uid="uid://c1xl15wquvejn"
+path="res://.godot/imported/sixAV.png-6a45f6a2d40656a865f51ea88bb580fd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/keyboard/two_key.png"
-dest_files=["res://.godot/imported/two_key.png-a67df4c9096a5fa3f343573e0fc3aeec.ctex"]
+source_file="res://Assets/keyboard/sixAV.png"
+dest_files=["res://.godot/imported/sixAV.png-6a45f6a2d40656a865f51ea88bb580fd.ctex"]
 
 [params]
 

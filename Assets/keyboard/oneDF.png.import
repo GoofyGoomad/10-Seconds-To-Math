@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://kbbn36extiei"
-path="res://.godot/imported/four_key.png-db207be22698a3db7df992007727e713.ctex"
+uid="uid://4xlfesowpoy7"
+path="res://.godot/imported/oneDF.png-0b7807341f4e517ad6debc2d7d68d41b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/keyboard/four_key.png"
-dest_files=["res://.godot/imported/four_key.png-db207be22698a3db7df992007727e713.ctex"]
+source_file="res://Assets/keyboard/oneDF.png"
+dest_files=["res://.godot/imported/oneDF.png-0b7807341f4e517ad6debc2d7d68d41b.ctex"]
 
 [params]
 

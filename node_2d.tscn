@@ -2,149 +2,20 @@
 
 [ext_resource type="Texture2D" uid="uid://ckwva0k8fb8gx" path="res://Assets/Background.png" id="1_0e48y"]
 [ext_resource type="Texture2D" uid="uid://70v8hx3nlsp0" path="res://Assets/DefaultComputer.png" id="2_0e48y"]
-[ext_resource type="Texture2D" uid="uid://b7fqt8br2t18s" path="res://Assets/keyboard/default_key.png" id="3_epypp"]
-[ext_resource type="Script" uid="uid://bw5bwrmvrao8b" path="res://Keyboard.cs" id="3_q6r6c"]
-[ext_resource type="Texture2D" uid="uid://bebeuu5gomny" path="res://Assets/keyboard/eight_key.png" id="5_kdubu"]
-[ext_resource type="Texture2D" uid="uid://cxqj3fwbjcvr0" path="res://Assets/keyboard/one_key.png" id="6_nr8wp"]
-[ext_resource type="Texture2D" uid="uid://nwx6vxc25gip" path="res://Assets/keyboard/five_key.png" id="7_d2bti"]
-[ext_resource type="Texture2D" uid="uid://kbbn36extiei" path="res://Assets/keyboard/four_key.png" id="8_ta5nu"]
-[ext_resource type="Texture2D" uid="uid://ba6hcudmp0rs2" path="res://Assets/keyboard/nine_key.png" id="9_flf07"]
-[ext_resource type="Texture2D" uid="uid://dc0jivo5d2a3g" path="res://Assets/keyboard/seven_key.png" id="10_k73cj"]
-[ext_resource type="Texture2D" uid="uid://j6vlb6ut65q" path="res://Assets/keyboard/six_key.png" id="11_rjqkl"]
-[ext_resource type="Texture2D" uid="uid://73m78h6gftq5" path="res://Assets/keyboard/three_key.png" id="12_fs4d3"]
-[ext_resource type="Texture2D" uid="uid://brku1kacqlwp3" path="res://Assets/keyboard/two_key.png" id="13_7vxoj"]
-[ext_resource type="Texture2D" uid="uid://drdewgu2keya4" path="res://Assets/keyboard/zero_key.png" id="14_ei405"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_d2bti"]
+
+[sub_resource type="Animation" id="Animation_0e48y"]
+resource_name = "new_animation"
 
 [sub_resource type="Animation" id="Animation_ta5nu"]
 resource_name = "plus"
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_flf07"]
 _data = {
+&"new_animation": SubResource("Animation_0e48y"),
 &"plus": SubResource("Animation_ta5nu")
 }
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_nr8wp"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("3_epypp")
-}],
-"loop": false,
-"name": &"default",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("5_kdubu")
-}, {
-"duration": 1.0,
-"texture": ExtResource("3_epypp")
-}],
-"loop": false,
-"name": &"eight",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("7_d2bti")
-}, {
-"duration": 1.0,
-"texture": ExtResource("3_epypp")
-}],
-"loop": false,
-"name": &"five",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("8_ta5nu")
-}, {
-"duration": 1.0,
-"texture": ExtResource("3_epypp")
-}],
-"loop": false,
-"name": &"four",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("9_flf07")
-}, {
-"duration": 1.0,
-"texture": ExtResource("3_epypp")
-}],
-"loop": false,
-"name": &"nine",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("6_nr8wp")
-}, {
-"duration": 1.0,
-"texture": ExtResource("3_epypp")
-}],
-"loop": false,
-"name": &"one",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("10_k73cj")
-}, {
-"duration": 1.0,
-"texture": ExtResource("3_epypp")
-}],
-"loop": false,
-"name": &"seven",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("11_rjqkl")
-}, {
-"duration": 1.0,
-"texture": ExtResource("3_epypp")
-}],
-"loop": false,
-"name": &"six",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("12_fs4d3")
-}, {
-"duration": 1.0,
-"texture": ExtResource("3_epypp")
-}],
-"loop": false,
-"name": &"three",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("13_7vxoj")
-}, {
-"duration": 1.0,
-"texture": ExtResource("3_epypp")
-}],
-"loop": false,
-"name": &"two",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("14_ei405")
-}, {
-"duration": 1.0,
-"texture": ExtResource("3_epypp")
-}],
-"loop": false,
-"name": &"zero",
-"speed": 5.0
-}]
 
 [node name="Node2D" type="Node2D" unique_id=1255809455]
 
@@ -168,11 +39,16 @@ sprite_frames = SubResource("SpriteFrames_d2bti")
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=629748224]
 libraries/ = SubResource("AnimationLibrary_flf07")
 
-[node name="Keyboard" type="Sprite2D" parent="." unique_id=657022650]
-script = ExtResource("3_q6r6c")
+[node name="Keyboard" type="Node2D" parent="." unique_id=160976619]
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Keyboard" unique_id=266360760]
-position = Vector2(-22, 618)
-scale = Vector2(1.29, 1.29)
-sprite_frames = SubResource("SpriteFrames_nr8wp")
-animation = &"zero"
+[node name="one" type="Node2D" parent="Keyboard" unique_id=183250937]
+
+[node name="two" type="Node2D" parent="Keyboard" unique_id=154657954]
+
+[node name="three" type="Node2D" parent="Keyboard" unique_id=550856764]
+
+[node name="four" type="Node2D" parent="Keyboard" unique_id=155643441]
+
+[node name="five" type="Node2D" parent="Keyboard" unique_id=1293633466]
+
+[node name="six" type="Node2D" parent="Keyboard" unique_id=1369296476]
